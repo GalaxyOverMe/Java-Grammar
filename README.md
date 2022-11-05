@@ -1,7 +1,7 @@
 # String [] -> List<String>
 <pre>
 String [] sArray = {"1", "2", "3"};
-List<String> sList = new ArrayList<>(Arrays.asList(sArray));
+List<String> sList = Arrays.asList(sArray);
 </pre>
 # List<String> -> String []
 <pre>
