@@ -1,21 +1,21 @@
-# String [] -> List<String>
+# String [] -> List&lt;String>
 <pre>
 String [] sArray = {"1", "2", "3"};
-List<String> sList = Arrays.asList(sArray);
+List&ltString>  sList = Arrays.asList(sArray);
 </pre>
-# List<String> -> String []
+# List&lt;String> -> String []
 <pre>
-List<String> sList = new ArrayList<>(Arrays.asList("1", "2", "3"));
+List&ltString> sList = new ArrayList<>(Arrays.asList("1", "2", "3"));
 String [] sArray = sList.toArray(new String[0]);
 </pre>
-# int [] -> List<Integer>
+# int [] -> List &lt;Integer>
 <pre>
 int [] intArray = {3, 2, 1};
-List<Integer> IntList = Arrays.stream(intArray).boxed().toList();
+List&ltInteger> IntList = Arrays.stream(intArray).boxed().toList();
 </pre>
-# List<Integer> -> int []
+# List&lt;Integer> -> int []
 <pre>
-List<Integer> IntList = new ArrayList<>(Arrays.asList(3, 2, 1));
+List&ltInteger> IntList = new ArrayList<>(Arrays.asList(3, 2, 1));
 int [] intArray = IntList.stream().mapToInt(i->i).toArray();
 </pre>
 # int [] -> Integer []
